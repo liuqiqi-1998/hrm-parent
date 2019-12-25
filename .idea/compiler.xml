@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hrm-basic-util" />
+        <module name="hrm-system-interface" />
+        <module name="hrm-basic-generator" />
+        <module name="hrm-zuul-gateway" />
+        <module name="hrm-eureka-server" />
+        <module name="hrm-config-server" />
+        <module name="hrm-system-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
