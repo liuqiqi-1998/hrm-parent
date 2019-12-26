@@ -7,11 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hrm-basic-util" />
+        <module name="hrm-config-server" />
+        <module name="hrm-course-interface" />
         <module name="hrm-system-interface" />
-        <module name="hrm-basic-generator" />
         <module name="hrm-zuul-gateway" />
         <module name="hrm-eureka-server" />
-        <module name="hrm-config-server" />
+        <module name="itsource-hrm-spring-boot-starter" />
+        <module name="hrm-course-service" />
+        <module name="hrm-basic-generator" />
         <module name="hrm-system-service" />
       </profile>
     </annotationProcessing>

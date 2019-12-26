@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf6fec1e-1f62-4af2-b164-1a399a4c04fd" name="Default Changelist" comment="" />
+    <list default="true" id="cf6fec1e-1f62-4af2-b164-1a399a4c04fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-basic-parent/hrm-basic-generator/src/main/resources/course-generator.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-basic-parent/itsource-hrm-spring-boot-starter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-basic-parent/itsource-hrm-spring-boot-starter/src/main/java/cn/itsource/hrm/config/SwaggerProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-basic-parent/itsource-hrm-spring-boot-starter/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-basic-parent/itsource-hrm-spring-boot-starter/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-course-parent/hrm-course-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-course-parent/hrm-course-interface/src/main/java/cn/itsource/hrm/domain/CourseType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-course-parent/hrm-course-interface/src/main/java/cn/itsource/hrm/query/CourseTypeQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-course-parent/hrm-course-parent.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-course-parent/hrm-course-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-course-parent/hrm-course-service/src/main/java/cn/itsource/hrm/CourseServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-course-parent/hrm-course-service/src/main/java/cn/itsource/hrm/mapper/CourseTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-course-parent/hrm-course-service/src/main/java/cn/itsource/hrm/service/ICourseTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-course-parent/hrm-course-service/src/main/java/cn/itsource/hrm/service/impl/CourseTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-course-parent/hrm-course-service/src/main/java/cn/itsource/hrm/web/controller/CourseTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-course-parent/hrm-course-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-course-parent/hrm-course-service/src/main/resources/cn/itsource/hrm/mapper/CourseTypeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-course-parent/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm-supports-parent/hrm-zuul-gateway/src/main/java/cn/itsource/hrm/config/GlobalCorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrm-basic-parent/hrm-basic-generator/src/main/java/cn/itsource/hrm/generator/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/hrm-basic-parent/hrm-basic-generator/src/main/java/cn/itsource/hrm/generator/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrm-basic-parent/hrm-basic-generator/target/classes/cn/itsource/hrm/generator/CodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/hrm-basic-parent/hrm-basic-generator/target/classes/cn/itsource/hrm/generator/CodeGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrm-basic-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hrm-basic-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrm-supports-parent/hrm-zuul-gateway/src/main/java/cn/itsource/hrm/config/DocumentationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hrm-supports-parent/hrm-zuul-gateway/src/main/java/cn/itsource/hrm/config/DocumentationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrm-supports-parent/hrm-zuul-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hrm-supports-parent/hrm-zuul-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrm-supports-parent/hrm-zuul-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hrm-supports-parent/hrm-zuul-gateway/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrm-supports-parent/hrm-zuul-gateway/target/classes/cn/itsource/hrm/config/DocumentationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/hrm-supports-parent/hrm-zuul-gateway/target/classes/cn/itsource/hrm/config/DocumentationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrm-system-parent/hrm-system-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hrm-system-parent/hrm-system-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrm-system-parent/hrm-system-service/src/main/java/cn/itsource/hrm/SystemServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/hrm-system-parent/hrm-system-service/src/main/java/cn/itsource/hrm/SystemServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrm-system-parent/hrm-system-service/src/main/java/cn/itsource/hrm/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hrm-basic-parent/itsource-hrm-spring-boot-starter/src/main/java/cn/itsource/hrm/config/MybatisPlusConfigAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrm-system-parent/hrm-system-service/src/main/java/cn/itsource/hrm/config/Swagger2.java" beforeDir="false" afterPath="$PROJECT_DIR$/hrm-basic-parent/itsource-hrm-spring-boot-starter/src/main/java/cn/itsource/hrm/config/Swagger2AutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrm-system-parent/hrm-system-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hrm-system-parent/hrm-system-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrm-system-parent/hrm-system-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hrm-system-parent/hrm-system-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrm-system-parent/hrm-system-service/target/classes/cn/itsource/hrm/SystemServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/hrm-system-parent/hrm-system-service/target/classes/cn/itsource/hrm/SystemServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +53,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -24,34 +66,45 @@
     </option>
   </component>
   <component name="ProjectId" id="1VQRc0WVuT7jW3OMlqVCU2EfBGG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/hrm-basic-parent/hrm-basic-util/src/main/java/cn/itsource/basic" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/hrm-system-parent/hrm-system-service/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.itsource.hrm.config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.itsource.hrm.config" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaLearn\IdeaWorkSpace\hrm-parent\hrm-system-parent\hrm-system-service\src\main\resources" />
       <recent name="D:\JavaLearn\IdeaWorkSpace\hrm-parent\hrm-basic-parent\hrm-basic-generator\src\main\resources" />
+      <recent name="D:\JavaLearn\IdeaWorkSpace\hrm-parent\hrm-course-parent\hrm-course-service\src\main\resources" />
+      <recent name="D:\JavaLearn\IdeaWorkSpace\hrm-parent\hrm-basic-parent\itsource-hrm-spring-boot-starter\src\main\resources\config" />
+      <recent name="D:\JavaLearn\IdeaWorkSpace\hrm-parent\hrm-system-parent\hrm-system-service\src\main\resources" />
       <recent name="D:\JavaLearn\IdeaWorkSpace\hrm-parent\hrm-supports-parent\hrm-zuul-gateway\src\main\resources" />
-      <recent name="D:\JavaLearn\IdeaWorkSpace\hrm-parent\hrm-supports-parent\hrm-eureka-server\src\main\resources" />
-      <recent name="D:\JavaLearn\IdeaWorkSpace\hrm-parent\hrm-basic-parent\hrm-basic-generator\src\main\java\cn\itsource\hrm\generator" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -61,7 +114,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SystemServiceApplication_9001">
+  <component name="RunManager" selected="Application.CodeGenerator">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.itsource.hrm.generator.CodeGenerator" />
       <module name="hrm-basic-generator" />
@@ -71,6 +124,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseServerApplication_9002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hrm-course-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itsource.hrm.CourseServerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,9 +162,10 @@
     </configuration>
     <list>
       <item itemvalue="Application.CodeGenerator" />
-      <item itemvalue="Spring Boot.SystemServiceApplication_9001" />
-      <item itemvalue="Spring Boot.EurekaServerApplication_8761" />
       <item itemvalue="Spring Boot.ZuulGatewayApplication_9527" />
+      <item itemvalue="Spring Boot.SystemServiceApplication_9001" />
+      <item itemvalue="Spring Boot.CourseServerApplication_9002" />
+      <item itemvalue="Spring Boot.EurekaServerApplication_8761" />
     </list>
     <recent_temporary>
       <list>
@@ -120,6 +182,11 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -141,53 +208,63 @@
       <workItem from="1577183411394" duration="11805000" />
       <workItem from="1577234834964" duration="6904000" />
       <workItem from="1577268814648" duration="600000" />
+      <workItem from="1577273168515" duration="3103000" />
+      <workItem from="1577279606747" duration="1813000" />
+      <workItem from="1577321984425" duration="3853000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="261" y="60" width="1164" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577191113397">
+    <state x="261" y="60" width="1164" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577275416421">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="261" y="60" width="1164" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1577191113397" />
+    <state x="261" y="60" width="1164" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1577275416421" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1577279776035">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577279776035" />
     <state x="362" y="152" key="FileChooserDialogImpl" timestamp="1577268732581">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="362" y="152" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577268732581" />
-    <state width="1024" height="354" key="GridCell.Tab.0.bottom" timestamp="1577268781260">
+    <state width="1024" height="369" key="GridCell.Tab.0.bottom" timestamp="1577325667681">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="354" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577268781260" />
-    <state width="1024" height="354" key="GridCell.Tab.0.center" timestamp="1577268781260">
+    <state width="1024" height="369" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577325667681" />
+    <state width="1024" height="369" key="GridCell.Tab.0.center" timestamp="1577325667681">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="354" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577268781260" />
-    <state width="1024" height="354" key="GridCell.Tab.0.left" timestamp="1577268781259">
+    <state width="1024" height="369" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577325667681" />
+    <state width="1024" height="369" key="GridCell.Tab.0.left" timestamp="1577325667681">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="354" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577268781259" />
-    <state width="1024" height="354" key="GridCell.Tab.0.right" timestamp="1577268781260">
+    <state width="1024" height="369" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577325667681" />
+    <state width="1024" height="369" key="GridCell.Tab.0.right" timestamp="1577325667681">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="354" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577268781260" />
-    <state width="1024" height="354" key="GridCell.Tab.1.bottom" timestamp="1577268781260">
+    <state width="1024" height="369" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577325667681" />
+    <state width="1024" height="369" key="GridCell.Tab.1.bottom" timestamp="1577325667682">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="354" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577268781260" />
-    <state width="1024" height="354" key="GridCell.Tab.1.center" timestamp="1577268781260">
+    <state width="1024" height="369" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577325667682" />
+    <state width="1024" height="369" key="GridCell.Tab.1.center" timestamp="1577325667681">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="354" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1577268781260" />
-    <state width="1024" height="354" key="GridCell.Tab.1.left" timestamp="1577268781260">
+    <state width="1024" height="369" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1577325667681" />
+    <state width="1024" height="369" key="GridCell.Tab.1.left" timestamp="1577325667681">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="354" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1577268781260" />
-    <state width="1024" height="354" key="GridCell.Tab.1.right" timestamp="1577268781260">
+    <state width="1024" height="369" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1577325667681" />
+    <state width="1024" height="369" key="GridCell.Tab.1.right" timestamp="1577325667681">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="354" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1577268781260" />
+    <state width="1024" height="369" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1577325667681" />
     <state x="270" y="54" key="SettingsEditor" timestamp="1577268772836">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -196,10 +273,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="1035" y="220" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1577184403872" />
-    <state x="356" y="135" key="new project wizard" timestamp="1577183825156">
+    <state x="356" y="135" key="new project wizard" timestamp="1577275109125">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="356" y="135" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1577183825156" />
+    <state x="356" y="135" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1577275109125" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1577195273679">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

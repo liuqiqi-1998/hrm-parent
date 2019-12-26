@@ -12,6 +12,7 @@
         <module>hrm-basic-parent</module>
         <module>hrm-supports-parent</module>
         <module>hrm-system-parent</module>
+        <module>hrm-course-parent</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -41,6 +42,11 @@
                 <version>${spring.cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <!--管理数据库连接-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
             </dependency>
         </dependencies>
     </dependencyManagement>
