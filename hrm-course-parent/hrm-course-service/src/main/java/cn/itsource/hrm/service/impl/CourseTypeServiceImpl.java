@@ -4,6 +4,7 @@ import cn.itsource.hrm.domain.CourseType;
 import cn.itsource.hrm.mapper.CourseTypeMapper;
 import cn.itsource.hrm.service.ICourseTypeService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
@@ -27,6 +28,24 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
     public List<CourseType> loadTreeData() {
         return getByPid03();
     }
+
+    @Override
+    public List<CourseType> findChildById(Long id) {
+        //一个子标题的集合
+        List<CourseType> children = new ArrayList<>();
+        //查询所有
+        List<CourseType> allLevel = baseMapper.selectList(null);
+        CourseType one = baseMapper.selectById(id);
+        if(one != null){
+            for (CourseType courseType : allLevel) {
+                if(courseType.getPid().longValue() == one.getId()){
+                    children.add(courseType);
+                }
+            }
+        }
+        return children;
+    }
+
 
     //递归的方式实现  (可读性较差，容易栈溢出)
     public List<CourseType> getByPid01(Long pid){
