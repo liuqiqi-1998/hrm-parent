@@ -8,8 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hrm-basic-util" />
         <module name="hrm-config-server" />
+        <module name="hrm-common-redis-interface" />
         <module name="hrm-course-interface" />
         <module name="hrm-system-interface" />
+        <module name="hrm-common-redis-service" />
         <module name="hrm-zuul-gateway" />
         <module name="hrm-eureka-server" />
         <module name="itsource-hrm-spring-boot-starter" />

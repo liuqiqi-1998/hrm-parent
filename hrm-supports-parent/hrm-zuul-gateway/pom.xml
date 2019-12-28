@@ -39,6 +39,12 @@
             <version>2.9.2</version>
         </dependency>
 
-    </dependencies>
+        <!--配置中心依赖,客户端-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+  </dependencies>
 
 </project>

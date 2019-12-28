@@ -1,0 +1,14 @@
+
+spring:
+  application:
+    name: COURSE-SERVICE
+  cloud:
+    config:
+      name: application-course
+      discovery:
+        enabled: true
+        service-id: CONFIG-SERVER
+  profiles:
+    active: dev
+
+

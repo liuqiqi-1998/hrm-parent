@@ -1,0 +1,14 @@
+
+spring:
+  application:
+    name: REDIS-SERVICE
+  cloud:
+    config:
+      name: application-redis
+      discovery:
+        enabled: true
+        service-id: CONFIG-SERVER
+  profiles:
+    active: dev
+
+

@@ -1,13 +1,17 @@
 package cn.itsource.hrm.service.impl;
 
+import cn.itsource.hrm.client.RedisClient;
 import cn.itsource.hrm.domain.CourseType;
 import cn.itsource.hrm.mapper.CourseTypeMapper;
 import cn.itsource.hrm.service.ICourseTypeService;
+import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -24,9 +28,34 @@ import java.util.Map;
 @Service
 public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseType> implements ICourseTypeService {
 
+    @Autowired
+    private RedisClient redisClient;
+
+
+
+    //便于数据的分类，设置不同的目录或者层级使用冒号
+    public final String COURSE_TYPE = "hrm:courseType:treeData";
+
     @Override
     public List<CourseType> loadTreeData() {
-        return getByPid03();
+        //从redis里面查询数据
+        String str = redisClient.get(COURSE_TYPE);
+        List<CourseType> list = null;
+        //判断是否存在数据
+        if(StringUtils.isNotEmpty(str)){
+            //存在数据直接返回
+            //字符串转集合对象
+            list = JSONObject.parseArray(str,CourseType.class);
+        }else {
+            //不存在从数据库里查询了先存到redis里面，再返回
+            //从数据库里查询数据
+            list = getByPid03();
+            //独显转成json字符串
+            String jsonString = JSONObject.toJSONString(list);
+            //以键值对的方式存储到redis缓存
+            redisClient.set(COURSE_TYPE,jsonString);
+        }
+        return list;
     }
 
     @Override
@@ -46,6 +75,39 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
         return children;
     }
 
+    /**
+     * 同步方法
+     * 增删改后同步redis的数据，保持和数据库同步
+     */
+    public void synchronization(){
+        List<CourseType> list = getByPid03();
+        //转成字符串
+        String jsonString = JSONObject.toJSONString(list);
+        //以键值对的方式存储到redis缓存
+        redisClient.set(COURSE_TYPE,jsonString);
+
+    }
+
+    @Override
+    public boolean save(CourseType entity) {
+        super.save(entity);
+        synchronization();
+        return true;
+    }
+
+    @Override
+    public boolean removeById(Serializable id) {
+        super.removeById(id);
+        synchronization();
+        return true;
+    }
+
+    @Override
+    public boolean updateById(CourseType entity) {
+        super.updateById(entity);
+        synchronization();
+        return true;
+    }
 
     //递归的方式实现  (可读性较差，容易栈溢出)
     public List<CourseType> getByPid01(Long pid){

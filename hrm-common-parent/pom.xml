@@ -9,13 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hrm-supports-parent</artifactId>
+    <artifactId>hrm-common-parent</artifactId>
     <packaging>pom</packaging>
     <modules>
-
-        <module>hrm-eureka-server</module>
-        <module>hrm-zuul-gateway</module>
-        <module>hrm-config-server</module>
+        <module>hrm-common-redis-interface</module>
+        <module>hrm-common-redis-service</module>
     </modules>
 
 
