@@ -19,7 +19,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author liuqiqi
- * @since 2019-12-25
+ * @since 2019-12-30
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -48,9 +48,6 @@ public class CourseType extends Model<CourseType> {
      */
     private Long pid;
 
-    @TableField(exist = false)
-    private List<CourseType> children = new ArrayList();
-
     /**
      * 图标
      */
@@ -70,10 +67,14 @@ public class CourseType extends Model<CourseType> {
     private String path;
 
     /**
-     * 课程数量
+     * 商品数量
      */
     @TableField("totalCount")
     private Integer totalCount;
+
+    @TableField(exist = false)
+    private List<CourseType> children = new ArrayList<>();
+
 
 
     @Override

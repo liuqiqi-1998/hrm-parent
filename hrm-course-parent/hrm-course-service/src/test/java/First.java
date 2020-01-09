@@ -13,12 +13,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest(classes={CourseServerApplication.class,First.class})
 public class First {
 
-    @Autowired
+    /*@Autowired
     private ICourseTypeService service;
     @Test
     public void test() throws Exception{
         for (CourseType courseType : service.findChildById(1037L)) {
             System.out.println(courseType);
         }
-    }
+    }*/
 }

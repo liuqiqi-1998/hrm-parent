@@ -14,6 +14,12 @@
     <modules>
         <module>hrm-common-redis-interface</module>
         <module>hrm-common-redis-service</module>
+        <module>hrm-common-file-interface</module>
+        <module>hrm-common-file-services</module>
+        <module>hrm-common-es-interface</module>
+        <module>hrm-common-es-service</module>
+        <module>hrm-common-staticpage-interface</module>
+        <module>hrm-common-staticpage-service</module>
     </modules>
 
 

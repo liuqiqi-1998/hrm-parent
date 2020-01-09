@@ -11,7 +11,7 @@ import cn.itsource.basic.query.BaseQuery;
  * </p>
  *
  * @author liuqiqi
- * @since 2019-12-24
+ * @since 2019-12-29
  */
 public class SystemdictionaryitemQuery extends BaseQuery {
 

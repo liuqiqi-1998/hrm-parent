@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itsource.hrm.mapper.PageInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.itsource.hrm.domain.PageInfo">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="alias" property="alias" />
+        <result column="type" property="type" />
+        <result column="physicalPath" property="physicalPath" />
+        <result column="createTime" property="createTime" />
+        <result column="site_id" property="siteId" />
+        <result column="template_url" property="templateUrl" />
+        <result column="template_file" property="templateFile"/>
+    </resultMap>
+    <resultMap id="configmap" type="cn.itsource.hrm.domain.PageInfo">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="alias" property="alias" />
+        <result column="type" property="type" />
+        <result column="physicalPath" property="physicalPath" />
+        <result column="createTime" property="createTime" />
+        <result column="site_id" property="siteId" />
+        <result column="template_url" property="templateUrl" />
+        <result column="template_file" property="templateFile"/>
+        <association property="pageConfig" javaType="cn.itsource.hrm.domain.PageConfig">
+            <id column="pcid" property="id"/>
+            <result column="data_key" property="dataKey"/>
+            <result column="page_url" property="pageUrl"/>
+        </association>
+        <association property="site" javaType="cn.itsource.hrm.domain.Site">
+            <id column="sid" property="id"/>
+            <result column="sname" property="name"/>
+            <result column="ssn" property="sn"/>
+        </association>
+    </resultMap>
+    <select id="mypage" resultMap="configmap">
+        SELECT
+            pi.*, pc.id pcid,
+            pc.data_key,
+            pc.page_url,
+            t.id sid,
+            t. NAME sname,
+            t.sn ssn
+        FROM
+            t_page_info pi
+        LEFT JOIN t_page_config pc ON pi.id = pc.page_id
+        LEFT JOIN t_site t ON pi.site_id = t.id
+    </select>
+
+</mapper>

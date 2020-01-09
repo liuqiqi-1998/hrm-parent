@@ -15,7 +15,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author liuqiqi
- * @since 2019-12-24
+ * @since 2019-12-29
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -32,6 +32,9 @@ public class Systemdictionaryitem extends Model<Systemdictionaryitem> {
 
     private String name;
 
+    /**
+     * 排序
+     */
     private Integer requence;
 
     private String intro;

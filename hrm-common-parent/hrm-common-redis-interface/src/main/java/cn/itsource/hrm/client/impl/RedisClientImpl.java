@@ -15,4 +15,9 @@ public class RedisClientImpl implements RedisClient {
     public String get(String key) {
         return "获取失败啦！";
     }
+
+    @Override
+    public void set(String key, String value, int time) {
+
+    }
 }

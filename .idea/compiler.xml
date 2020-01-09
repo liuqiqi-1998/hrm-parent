@@ -6,18 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hrm-basic-util" />
-        <module name="hrm-config-server" />
         <module name="hrm-common-redis-interface" />
-        <module name="hrm-course-interface" />
+        <module name="hrm-common-file-interface" />
+        <module name="hrm-page-interface" />
+        <module name="hrm-common-staticpage-service" />
+        <module name="hrm-config-server" />
         <module name="hrm-system-interface" />
-        <module name="hrm-common-redis-service" />
-        <module name="hrm-zuul-gateway" />
-        <module name="hrm-eureka-server" />
+        <module name="hrm-course-interface" />
         <module name="itsource-hrm-spring-boot-starter" />
-        <module name="hrm-course-service" />
-        <module name="hrm-basic-generator" />
+        <module name="hrm-common-staticpage-interface" />
+        <module name="hrm-page-rabbitmq" />
+        <module name="hrm-common-file-services" />
+        <module name="hrm-zuul-gateway" />
+        <module name="hrm-common-redis-service" />
+        <module name="hrm-common-es-interface" />
+        <module name="hrm-user-service" />
         <module name="hrm-system-service" />
+        <module name="hrm-page-service" />
+        <module name="hrm-eureka-server" />
+        <module name="hrm-basic-util" />
+        <module name="hrm-user-interface" />
+        <module name="hrm-course-service" />
+        <module name="hrm-common-es-service" />
+        <module name="hrm-basic-generator" />
       </profile>
     </annotationProcessing>
   </component>

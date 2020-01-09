@@ -1,0 +1,18 @@
+package cn.itsource.hrm.query;
+
+
+
+import cn.itsource.basic.query.BaseQuery;
+
+
+/**
+ * <p>
+ *  查询参数对象
+ * </p>
+ *
+ * @author liuqiqi
+ * @since 2020-01-02
+ */
+public class SiteQuery extends BaseQuery {
+
+}

@@ -1,7 +1,6 @@
 package cn.itsource.hrm.service;
 
 import cn.itsource.hrm.domain.CourseType;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;
@@ -12,12 +11,12 @@ import java.util.List;
  * </p>
  *
  * @author liuqiqi
- * @since 2019-12-25
+ * @since 2019-12-30
  */
 public interface ICourseTypeService extends IService<CourseType> {
 
     List<CourseType> loadTreeData();
 
+    void staticCoursePage(Long pageId);
 
-    List<CourseType> findChildById(Long id);
 }

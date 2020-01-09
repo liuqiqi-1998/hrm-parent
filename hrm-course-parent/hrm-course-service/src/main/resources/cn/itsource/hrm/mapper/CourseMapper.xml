@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itsource.hrm.mapper.CourseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.itsource.hrm.domain.Course">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="users" property="users" />
+        <result column="course_type_id" property="courseTypeId" />
+        <result column="grade" property="grade" />
+        <result column="status" property="status" />
+        <result column="tenant_id" property="tenantId" />
+        <result column="tenantName" property="tenantName" />
+        <result column="user_id" property="userId" />
+        <result column="userName" property="userName" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+    </resultMap>
+    <resultMap id="courseMap" type="cn.itsource.hrm.domain.Course">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="users" property="users" />
+        <result column="course_type_id" property="courseTypeId" />
+        <result column="grade" property="grade" />
+        <result column="status" property="status" />
+        <result column="tenant_id" property="tenantId" />
+        <result column="tenantName" property="tenantName" />
+        <result column="user_id" property="userId" />
+        <result column="userName" property="userName" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+        <association property="courseType" javaType="cn.itsource.hrm.domain.CourseType">
+            <id column="ctid" property="id"/>
+            <result column="ctname" property="name"/>
+        </association>
+    </resultMap>
+    <update id="online">
+        update t_course set status=1,start_time=#{currentTimeMillis}
+        where id in
+            <foreach collection="ids" item="id"  open="(" close=")" separator=",">
+                #{id}
+            </foreach>
+    </update>
+    <update id="offline">
+        update t_course set status=0,end_time=#{currentTimeMillis}
+        where id in
+        <foreach collection="ids" item="id"  open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </update>
+
+    <select id="count" resultType="java.lang.Long">
+        SELECT
+            count(*)
+        FROM
+            t_course c
+        LEFT JOIN t_course_type ct ON c.course_type_id = ct.id
+
+    </select>
+    <select id="selectByQuery" resultMap="courseMap">
+        SELECT
+            c.*, ct.id ctid,
+            ct.name ctname
+        FROM
+            t_course c
+        LEFT JOIN t_course_type ct ON c.course_type_id = ct.id
+        <include refid="courseId"/>
+        limit #{start},#{rows}
+    </select>
+    <select id="mypage" resultMap="courseMap">
+        SELECT
+        c.*, ct.id ctid,
+        ct.name ctname
+        FROM
+        t_course c
+        LEFT JOIN t_course_type ct ON c.course_type_id = ct.id
+        <include refid="courseId"/>
+    </select>
+
+
+    <!--修改为query.keyword-->
+    <sql id="courseId">
+        <where>
+            <if test="query.keyword !=null and query.keyword !='' ">
+                and c.name like concat('%',#{query.keyword},'%')
+            </if>
+            <if test="query.status !=null">
+                and c.status = #{query.status}
+            </if>
+        </where>
+    </sql>
+
+</mapper>

@@ -1,0 +1,14 @@
+
+spring:
+  application:
+    name: PAGE-SERVICE
+  cloud:
+    config:
+      name: application-page
+      discovery:
+        enabled: true
+        service-id: CONFIG-SERVER
+  profiles:
+    active: dev
+
+

@@ -84,15 +84,22 @@ public class CourseTypeController {
         return new PageList<>(page.getTotal(),page.getRecords());
     }
 
-    //显示菜单树
     @GetMapping("/treeData")
     public List<CourseType> treeData(){
         return courseTypeService.loadTreeData();
     }
 
-    //通过id查询所有子菜单
-    @GetMapping("/findChildById/{id}")
-    public List<CourseType> findChildById(@PathVariable("id")Long id){
-        return courseTypeService.findChildById(id);
+    @GetMapping("/staticCoursePage")
+    public AjaxResult staticCoursePage(Long pageId){
+        try {
+            courseTypeService.staticCoursePage(pageId);
+            return AjaxResult.me();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return AjaxResult.me().setSuccess(false).setMessage("失败！");
+        }
+
     }
+
+
 }

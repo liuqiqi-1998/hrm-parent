@@ -11,7 +11,7 @@ import cn.itsource.basic.query.BaseQuery;
  * </p>
  *
  * @author liuqiqi
- * @since 2019-12-25
+ * @since 2019-12-30
  */
 public class CourseTypeQuery extends BaseQuery {
 

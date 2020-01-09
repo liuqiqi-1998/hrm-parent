@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author liuqiqi
- * @since 2019-12-24
+ * @since 2019-12-29
  */
 public interface SystemdictionaryitemMapper extends BaseMapper<Systemdictionaryitem> {
 
